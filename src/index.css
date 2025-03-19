@@ -119,16 +119,42 @@
   }
 }
 
-/* Hide scrollbar but allow scrolling */
-::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-  background: transparent;
+/* Show scrollbar for desktop devices - updated */
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(10, 255, 255, 0.5);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(10, 255, 255, 0.8);
+  }
+  
+  /* For Firefox */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(10, 255, 255, 0.5) rgba(0, 0, 0, 0.2);
+  }
 }
 
-/* For Mozilla Firefox */
-html {
-  scrollbar-width: none;
+/* Default hidden scrollbar for mobile (keep existing) */
+@media (max-width: 767px) {
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+  }
+  
+  /* For Mozilla Firefox */
+  html {
+    scrollbar-width: none;
+  }
 }
 
 /* Page transitions */
