@@ -13,12 +13,20 @@ const Footer = () => {
     { name: 'Disclaimer', href: '#disclaimer' },
     { name: 'More AI Tools', href: 'https://www.aiwebtools.ai' },
     { name: 'Privacy Policy', href: 'https://openai.com/policies/privacy-policy/' },
-    { name: 'Terms of Service', href: 'https://aiwebtools.ai/terms-of-services' },
+    { name: 'Terms of Service', href: 'https://aiwebtools.lovable.app/disclaimers' },
   ];
 
   return (
     <footer className="bg-black/40 pt-16 pb-8 border-t border-white/5">
       <div className="container mx-auto px-4">
+        {/* Small disclaimer notice */}
+        <div className="text-center mb-8">
+          <p className="text-gray-400 text-xs max-w-2xl mx-auto">
+            <strong>Disclaimer:</strong> This tool is provided for informational, educational, and research purposes only. 
+            All analyses and recommendations should be considered as guidance and not as professional business advice.
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
             <Logo className="mb-4" />
