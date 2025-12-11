@@ -52,58 +52,73 @@ const Hero: React.FC = () => {
       ></div>
       
       {/* Content */}
-      <div className="container mx-auto relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
-        <div className="md:w-1/2 text-center md:text-left">
-          <div className="inline-block px-3 py-1 mb-4 glass-card rounded-full">
-            <span className="text-cyberpunk-blue text-sm font-medium">Powered by GPT4o</span>
-          </div>
-          
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white leading-tight">
-            <span className="text-gradient-blue">Validate</span> Your Startup Idea in Minutes
-          </h1>
-          
-          <p className="text-gray-300 text-lg mb-8 max-w-xl">
-            Comprehensive analysis of market viability, scalability, and risk factors across industries. Get expert insights backed by real-time data.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a 
-              href="https://chatgpt.com/g/g-67db474ca77c8191ba486995811c1c95-startup-validator-gpt" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="button-glow px-6 py-3 rounded-md bg-gradient-to-r from-cyberpunk-blue to-cyberpunk-purple text-white font-medium transition-all duration-300 hover:shadow-neon"
-            >
-              Try Startup Validator GPT
-            </a>
-            <a 
-              href="#features" 
-              className="px-6 py-3 rounded-md border border-white/20 text-white hover:border-cyberpunk-blue/50 hover:text-cyberpunk-blue transition-all duration-300"
-            >
-              Learn More
-            </a>
-          </div>
+      <div className="container mx-auto relative z-10 flex flex-col items-center gap-10">
+        {/* YouTube Video Embed */}
+        <div className="w-full max-w-4xl aspect-video rounded-xl overflow-hidden shadow-neon border border-white/10">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/P4J0ErIVXgY?autoplay=1&mute=0&vq=hd1080&loop=1&playlist=P4J0ErIVXgY"
+            title="AI Web Tools Introduction"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
         </div>
-        
-        <div className="md:w-1/2 h-[400px] md:h-[500px] relative animate-float">
-          {/* 3D Element */}
-          <div className="absolute inset-0 z-10">
-            <ThreeDElement />
+
+        <div className="flex flex-col md:flex-row items-center justify-between gap-10 w-full">
+          <div className="md:w-1/2 text-center md:text-left">
+            <div className="inline-block px-3 py-1 mb-4 glass-card rounded-full">
+              <span className="text-cyberpunk-blue text-sm font-medium">Powered by GPT4o</span>
+            </div>
+            
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white leading-tight">
+              <span className="text-gradient-blue">Validate</span> Your Startup Idea in Minutes
+            </h1>
+            
+            <p className="text-gray-300 text-lg mb-8 max-w-xl">
+              Comprehensive analysis of market viability, scalability, and risk factors across industries. Get expert insights backed by real-time data.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a 
+                href="https://chatgpt.com/g/g-67db474ca77c8191ba486995811c1c95-startup-validator-gpt" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button-glow px-6 py-3 rounded-md bg-gradient-to-r from-cyberpunk-blue to-cyberpunk-purple text-white font-medium transition-all duration-300 hover:shadow-neon"
+              >
+                Try Startup Validator GPT
+              </a>
+              <a 
+                href="#features" 
+                className="px-6 py-3 rounded-md border border-white/20 text-white hover:border-cyberpunk-blue/50 hover:text-cyberpunk-blue transition-all duration-300"
+              >
+                Learn More
+              </a>
+            </div>
           </div>
           
-          {/* Overlay image */}
-          <div className="absolute inset-0 flex items-center justify-center z-20">
-            <a 
-              href="https://ideogram.ai/assets/image/lossless/response/4i8GYlLZRiCtjAUOYefVMA" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="transition-transform duration-300 hover:scale-105"
-            >
-              <img 
-                src="https://ideogram.ai/assets/image/lossless/response/4i8GYlLZRiCtjAUOYefVMA" 
-                alt="Startup Validator Concept" 
-                className="max-w-full h-auto max-h-[400px] rounded-lg shadow-neon object-contain"
-              />
-            </a>
+          <div className="md:w-1/2 h-[400px] md:h-[500px] relative animate-float">
+            {/* 3D Element */}
+            <div className="absolute inset-0 z-10">
+              <ThreeDElement />
+            </div>
+            
+            {/* Overlay image */}
+            <div className="absolute inset-0 flex items-center justify-center z-20">
+              <a 
+                href="https://ideogram.ai/assets/image/lossless/response/4i8GYlLZRiCtjAUOYefVMA" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="transition-transform duration-300 hover:scale-105"
+              >
+                <img 
+                  src="https://ideogram.ai/assets/image/lossless/response/4i8GYlLZRiCtjAUOYefVMA" 
+                  alt="Startup Validator Concept" 
+                  className="max-w-full h-auto max-h-[400px] rounded-lg shadow-neon object-contain"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
