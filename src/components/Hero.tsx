@@ -53,19 +53,6 @@ const Hero: React.FC = () => {
       
       {/* Content */}
       <div className="container mx-auto relative z-10 flex flex-col items-center gap-10">
-        {/* YouTube Video Embed */}
-        <div className="w-full max-w-4xl aspect-video rounded-xl overflow-hidden shadow-neon border border-white/10">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/P4J0ErIVXgY?autoplay=1&mute=0&vq=hd1080&loop=1&playlist=P4J0ErIVXgY"
-            title="AI Web Tools Introduction"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
-        </div>
-
         <div className="flex flex-col md:flex-row items-center justify-between gap-10 w-full">
           <div className="md:w-1/2 text-center md:text-left">
             <div className="inline-block px-3 py-1 mb-4 glass-card rounded-full">
@@ -120,6 +107,19 @@ const Hero: React.FC = () => {
               </a>
             </div>
           </div>
+        </div>
+
+        {/* YouTube Video Embed */}
+        <div className="w-full max-w-4xl aspect-video rounded-xl overflow-hidden shadow-neon border border-white/10">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/P4J0ErIVXgY?autoplay=1&mute=0&vq=hd1080&loop=1&playlist=P4J0ErIVXgY"
+            title="AI Web Tools Introduction"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
       
