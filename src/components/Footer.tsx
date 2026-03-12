@@ -11,7 +11,7 @@ const Footer = () => {
     { name: 'AI Business Tools Suite', href: 'https://businessplanandtrainai.lovable.app//?via=aiwebtools' },
     { name: 'FAQ', href: '#faq' },
     { name: 'Disclaimer', href: '#disclaimer' },
-    { name: 'More AI Tools', href: 'https://www.aiwebtools.ai' },
+    { name: 'More AI Tools', href: 'https://aiwebtools.lovable.app/?via=aiwebtools' },
     { name: 'Privacy Policy', href: 'https://openai.com/policies/privacy-policy/' },
     { name: 'Terms of Service', href: 'https://aiwebtools.lovable.app/disclaimers' },
   ];
