@@ -12,7 +12,7 @@ const Header = () => {
     { name: 'AI Business Tools Suite', href: 'https://businessplanandtrainai.lovable.app//?via=aiwebtools', external: true },
     { name: 'FAQ', href: '#faq', external: false },
     { name: 'Disclaimer', href: '#disclaimer', external: false },
-    { name: 'More AI Tools', href: 'https://www.aiwebtools.ai', external: true },
+    { name: 'More AI Tools', href: 'https://aiwebtools.lovable.app/?via=aiwebtools', external: true },
   ];
 
   useEffect(() => {
