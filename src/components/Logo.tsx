@@ -34,7 +34,7 @@ const Logo: React.FC<LogoProps> = ({ className = "", small = false }) => {
             </div>
             {!small && (
               <div className="text-xs text-gray-400 -mt-1">
-                Presented by <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="hover:text-cyberpunk-blue transition-colors">AiWebTools.AI</a>
+                Presented by <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="hover:text-cyberpunk-blue transition-colors">AiWebTools.AI</a>
               </div>
             )}
           </div>

@@ -12,7 +12,7 @@ const Header = () => {
     { name: 'AI Business Tools Suite', href: 'https://businessplanandtrainai.lovable.app//?via=aiwebtools', external: true },
     { name: 'FAQ', href: '#faq', external: false },
     { name: 'Disclaimer', href: '#disclaimer', external: false },
-    { name: 'More AI Tools', href: 'https://www.aiwebtools.ai', external: true },
+    { name: 'More AI Tools', href: 'https://aiwebtools.lovable.app/?via=aiwebtools', external: true },
   ];
 
   useEffect(() => {
@@ -76,33 +76,37 @@ const Header = () => {
       </div>
 
       {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 glass-card animate-fade-in">
-          <div className="py-2 px-4 space-y-3">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                target={item.external ? "_blank" : undefined}
-                rel={item.external ? "noopener noreferrer" : undefined}
-                className="block py-2 text-white hover:text-cyberpunk-blue transition-colors duration-200"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {item.name}
-              </a>
-            ))}
+      <div 
+        className={`md:hidden absolute top-full left-0 right-0 glass-card transition-all duration-200 ease-out ${
+          mobileMenuOpen 
+            ? 'opacity-100 translate-y-0 pointer-events-auto' 
+            : 'opacity-0 -translate-y-2 pointer-events-none'
+        }`}
+      >
+        <div className="py-3 px-4 space-y-1 max-h-[80vh] overflow-y-auto">
+          {navItems.map((item) => (
             <a
-              href="https://chatgpt.com/g/g-67db474ca77c8191ba486995811c1c95-startup-validator-gpt"
-              target="_blank"
-              rel="noopener noreferrer" 
-              className="block py-2 px-4 my-2 text-center rounded-md bg-gradient-to-r from-cyberpunk-blue to-cyberpunk-purple text-white"
+              key={item.name}
+              href={item.href}
+              target={item.external ? "_blank" : undefined}
+              rel={item.external ? "noopener noreferrer" : undefined}
+              className="block py-3 px-2 text-white hover:text-cyberpunk-blue active:text-cyberpunk-blue transition-colors duration-150 text-base"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Try It Now
+              {item.name}
             </a>
-          </div>
+          ))}
+          <a
+            href="https://chatgpt.com/g/g-67db474ca77c8191ba486995811c1c95-startup-validator-gpt"
+            target="_blank"
+            rel="noopener noreferrer" 
+            className="block py-3 px-4 my-2 text-center rounded-md bg-gradient-to-r from-cyberpunk-blue to-cyberpunk-purple text-white font-medium"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Try It Now
+          </a>
         </div>
-      )}
+      </div>
     </header>
   );
 };

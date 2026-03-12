@@ -11,7 +11,7 @@ const Footer = () => {
     { name: 'AI Business Tools Suite', href: 'https://businessplanandtrainai.lovable.app//?via=aiwebtools' },
     { name: 'FAQ', href: '#faq' },
     { name: 'Disclaimer', href: '#disclaimer' },
-    { name: 'More AI Tools', href: 'https://www.aiwebtools.ai' },
+    { name: 'More AI Tools', href: 'https://aiwebtools.lovable.app/?via=aiwebtools' },
     { name: 'Privacy Policy', href: 'https://openai.com/policies/privacy-policy/' },
     { name: 'Terms of Service', href: 'https://aiwebtools.lovable.app/disclaimers' },
   ];
@@ -90,12 +90,12 @@ const Footer = () => {
         
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {year} <a href="https://www.aiwebtools.ai" className="hover:text-cyberpunk-blue transition-colors">AI WEB TOOLS LLC</a> All rights reserved.
+            © {year} <a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="hover:text-cyberpunk-blue transition-colors">AI WEB TOOLS LLC</a> All rights reserved.
           </p>
           
           <div className="mt-4 md:mt-0">
             <a 
-              href="https://www.aiwebtools.ai" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
               className="button-glow px-5 py-2 rounded-full bg-gradient-to-r from-cyberpunk-blue to-cyberpunk-purple text-white text-sm font-medium transition-all duration-300 hover:shadow-neon"
               target="_blank"
               rel="noopener noreferrer"
