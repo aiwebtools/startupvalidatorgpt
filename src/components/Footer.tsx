@@ -90,7 +90,7 @@ const Footer = () => {
         
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {year} <a href="https://www.aiwebtools.ai" className="hover:text-cyberpunk-blue transition-colors">AI WEB TOOLS LLC</a> All rights reserved.
+            © {year} <a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="hover:text-cyberpunk-blue transition-colors">AI WEB TOOLS LLC</a> All rights reserved.
           </p>
           
           <div className="mt-4 md:mt-0">
